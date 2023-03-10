@@ -1,0 +1,19 @@
+<header class="row justify-content-between">
+    <div class="col-8 me-5"><img class="app-logo " src="../../assets/Images/carpool/Ya logo.png" alt="Ya logo"></div>
+    <div class="col">
+        <div class="ms-5">
+            <div class="row ms-4 mt-2">
+                <b class="col-4 me-4 mt-2">{{name}}</b>
+
+                <span class="col me-2" (click)="toggleDropDown()"><img class="profile-img"
+                        src="../../assets/Images/carpool/MyPic.jpg" alt="User Pic"></span>
+                <div [hidden]="dropDownStatus" class="drop-down">
+                    <div class="p-2"><a class="dropdown-item" routerLink="/profile">Profile</a></div>
+                    <div class="p-2"><a class="dropdown-item" routerLink="/home">Home</a></div>
+                    <div class="p-2"><a class="dropdown-item" routerLink="/myrides">My Rides</a></div>
+                    <div class="p-2"><a class="dropdown-item" (click)="onLogOut()">Logout</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

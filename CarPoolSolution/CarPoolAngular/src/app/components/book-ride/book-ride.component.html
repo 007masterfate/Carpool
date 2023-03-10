@@ -1,0 +1,99 @@
+<section>
+    <app-header></app-header>
+
+    <div class="row bg-template">
+
+        <div class="col-3 mt-3 ms-4 book-ride-model">
+            <h3 class="ms-3 mt-3">Book a Ride</h3>
+            <span class="ms-3">we get you the matches asap !
+                <div class="form-check form-switch ">
+                    <input class="form-check-input edited" routerLink="/offerride" type="checkbox" role="switch"
+                        checked>
+                </div>
+            </span>
+
+
+            <form class="ms-3 mt-2" [formGroup]="newRideFormData" (ngSubmit)="onSubmitBookRide()" ngNativeValidate>
+                <div class="row">
+                    <div class="col-10">
+                        <label>From</label>
+                        <select name="from" formControlName="from" required>
+                            <option *ngFor="let stop of stops|enumToArray:0:10,let i=index" value="{{i+1}}">{{stop}}
+                            </option>
+                        </select>
+                        <label>To</label>
+                        <select name="from" formControlName="to" required>
+                            <option
+                                *ngFor="let stop of stops|enumToArray:newRideFormData.get('from')?.value:10,let i=index"
+                                value="{{stop}}">{{stop}}
+                            </option>
+                        </select>
+                    </div>
+
+                    <app-start-endstyle class="col-2 mt-3" [data]=4 [flag]=true></app-start-endstyle>
+                </div>
+
+                <label for="Date">Date</label>
+                <input id="date-inp" class="input-edit" type="date" name="date" placeholder="xx-mm-yyyy"
+                    formControlName="date" required>
+
+                <label for="time">Time</label>
+                <div class="mt-4">
+                    <div class="d-inline-block " *ngFor="let selectedTime of timing|keyvalue">
+
+                        <input type="radio" class="btn-check" name="time" value="{{selectedTime.value}}"
+                            formControlName="time" id="time{{selectedTime.value}}" autocomplete="off" required>
+                        <label class="time-buttons btn me-2"
+                            for="time{{selectedTime.value}}">{{selectedTime.value}}</label><br>
+                    </div>
+                </div>
+
+                <button type="submit" class="model-submit mb-4">Submit</button>
+            </form>
+        </div>
+        <div *ngIf="message!=''" class="col text-warning matches mt-5">
+            {{message}}
+            <br>
+            <p *ngIf="!isSuccess">Might be also because of User Availablility</p>
+        </div>
+        <div *ngIf="matchedOffers?.length!=0" class="col matches">
+            <h3 class="match-heading"><b>Your Matches</b></h3>
+
+
+            <div class="row matchs-gap matches ">
+                <div class="col-5" *ngFor="let offer of matchedOffers,let i=index">
+                    <app-matches-template [data]="offer" [name]=users[i] [isBookRideComp]=false></app-matches-template>
+
+                    <div class="modal fade" [attr.id]="'ride'+offer.id" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>Ride Details</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Seats Available: {{offer.seatsAvailable}}
+                                    <br>
+                                    <input type="number" max={{offer.seatsAvailable}}
+                                        (input)="calculatePrice(offer.price)" [(ngModel)]="seatsInput">
+                                    <div *ngIf="seatsInput>offer.seatsAvailable" class="text-danger">
+                                        Entered seats are more than Available !!!
+                                    </div>
+                                    <h5>Select seats to know the price</h5>
+                                    <p> Price: <i class="bi bi-currency-rupee"></i>{{price}}</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" [disabled]="seatsInput>offer.seatsAvailable"
+                                        (click)="onClickBookRide(offer.offerId)" data-bs-dismiss="modal"
+                                        class="btn btn-success">Confirm Ride</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

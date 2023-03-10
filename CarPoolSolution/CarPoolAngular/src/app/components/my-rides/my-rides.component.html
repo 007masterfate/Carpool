@@ -1,0 +1,35 @@
+<section>
+    <app-header></app-header>
+
+    <div class="row bg-template  booked-rides">
+        <div class="col-4 mt-4">
+            <p class="title-rides ">Booked Rides</p>
+            <div *ngIf="bookedRides?.length==0">
+                No Rides
+
+            </div>
+            <div class="offered-rides">
+                <div class="col-4 model-adjust" *ngFor="let test of bookedRides,let i=index">
+
+                    <app-matches-template [data]="test" [name]=users[i] [isBookRideComp]=true [isBookedRide]=true
+                        [isOfferedRide]=false></app-matches-template>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-4 mt-4 ">
+            <p class="title-offers">Offered Rides</p>
+            <div *ngIf="offeredRides?.length==0">
+                No Offers
+
+            </div>
+            <div class="offered-rides">
+                <div class="col-4 model-adjust" *ngFor="let test of offeredRides">
+
+                    <app-matches-template [data]=" test" [isBookRideComp]=true [isBookedRide]=false
+                        [isOfferedRide]="true"></app-matches-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

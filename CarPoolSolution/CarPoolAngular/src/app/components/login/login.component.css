@@ -1,0 +1,56 @@
+@import url("../sign-up/sign-up.component.css");
+button {
+  background-color: #ffac19;
+  color: white;
+}
+.member {
+  font-weight: 100;
+}
+.signup {
+  font-weight: 600;
+  cursor: pointer;
+}
+.right-login {
+  color: white;
+  text-align: center;
+  padding-top: 90px;
+  background-color: #9319ff;
+  width: 100%;
+}
+
+.right-login img {
+  margin-top: 14px;
+  width: 100%;
+  height: 250px;
+}
+
+.left-login img:last-child {
+  width: 95%;
+  height: 19.375rem;
+}
+
+.left-login img:first-child {
+  width: 3.438rem;
+  position: relative;
+  top: 2rem;
+  left: 4rem;
+}
+.left-login h1 {
+  font-size: 5rem;
+  position: relative;
+  top: 2.813rem;
+  left: 3.25rem;
+}
+.left-login h3 {
+  letter-spacing: 3px;
+  position: relative;
+  top: 1.875rem;
+  left: 3.25rem;
+}
+.signup-redirect {
+  position: relative;
+  z-index: 1;
+}
+.login-hr {
+  margin: 0 0 0 15.5rem;
+}

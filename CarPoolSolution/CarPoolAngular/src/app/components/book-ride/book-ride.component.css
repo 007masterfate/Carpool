@@ -1,0 +1,140 @@
+body {
+  overflow-y: auto !important;
+}
+.book-ride-model {
+  background-color: white;
+  box-shadow: 0 0 3px darkgrey;
+  border-radius: 7px;
+  height: fit-content;
+  padding-top: 17px;
+}
+.color-component {
+  background-color: #9319ff !important;
+  color: white !important;
+}
+
+#date-inp::-webkit-calendar-picker-indicator {
+  padding-left: 10.5rem;
+  opacity: 0;
+}
+
+.edited {
+  position: relative;
+  bottom: 3rem;
+  left: 17rem;
+  font-size: 20px;
+  background-color: #9319ff;
+}
+
+.matches {
+  position: relative;
+  left: 6rem;
+  top: 2rem;
+}
+.bg-template {
+  background-image: url("../../../assets/Images/carpool/test.png");
+  background-position: bottom;
+  height: 35.5rem;
+  background-repeat: no-repeat;
+  width: 102%;
+  background-size: contain;
+}
+.book-ride-model {
+  position: relative;
+  left: 2rem !important;
+  top: 1rem;
+  font-size: 11px;
+  width: 21.5rem;
+  height: 27rem;
+}
+.input-edit {
+  width: 16rem;
+  border: none;
+  background: white;
+  border-bottom: 1.5px solid grey;
+  outline: 0;
+  border-width: 0 0 1.5px;
+}
+input:focus {
+  border-color: #4a90e2;
+}
+.model-submit {
+  display: block;
+  background-color: #ffac19;
+  width: 100px;
+  height: 34px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
+.book-ride-bg {
+  position: relative;
+  left: 40px;
+}
+
+.match-heading {
+  color: #9319ff;
+  margin-top: 20px;
+  margin-left: -23px;
+}
+.time-buttons {
+  border: solid 1.5px #9319ff;
+  background-color: white;
+  border-radius: 15px;
+  width: 8.3em;
+  font-size: 10px;
+  color: black;
+  margin-top: -15px;
+}
+
+.time-buttons:focus,
+.btn:focus,
+.btn-check:checked + .btn,
+.seats:checked {
+  background-color: #9319ff;
+  color: white;
+}
+
+label {
+  display: block;
+  color: #a1a1a3;
+  margin: 5px 0 5px 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.seats {
+  border: 1px solid darkgray;
+  border-radius: 47px;
+  width: 35px;
+  height: 35px;
+  margin-left: 4px;
+  color: black;
+}
+.seats:hover,
+.seats:focus {
+  color: white;
+  background-color: #9319ff;
+}
+
+span {
+  margin-top: -8px;
+  color: #a1a1a1;
+  font-weight: 500;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 11px;
+}
+
+select {
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid darkgrey;
+  width: 16rem;
+  appearance: none;
+}
+
+::placeholder {
+  color: darkgrey;
+}

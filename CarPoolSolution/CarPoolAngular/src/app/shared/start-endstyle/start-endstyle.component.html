@@ -1,0 +1,9 @@
+<div count="data" flag="flag" class="adjustment">
+    <div>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-dot" [ngClass]="flag?'vertical-edit':'horizontal-edit'"
+            *ngFor="let item of numSequence(data)"></i>
+        <i class="bi bi-geo-alt-fill"></i>
+    </div>
+
+</div>

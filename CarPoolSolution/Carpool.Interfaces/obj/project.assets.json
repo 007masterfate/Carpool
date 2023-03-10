@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "CarPool.Enums/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CarPool.Enums.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarPool.Enums.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CarPool.Enums/1.0.0": {
+      "type": "project",
+      "path": "../CarPool.Enums/CarPool.Enums.csproj",
+      "msbuildProject": "../CarPool.Enums/CarPool.Enums.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "CarPool.Enums >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Shyam\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Carpool.Interfaces\\Carpool.Interfaces.csproj",
+      "projectName": "Carpool.Interfaces",
+      "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Carpool.Interfaces\\Carpool.Interfaces.csproj",
+      "packagesPath": "C:\\Users\\Shyam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Carpool.Interfaces\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Shyam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\CarPool.Enums\\CarPool.Enums.csproj": {
+              "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\CarPool.Enums\\CarPool.Enums.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

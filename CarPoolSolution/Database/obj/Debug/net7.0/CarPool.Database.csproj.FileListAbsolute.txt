@@ -1,0 +1,17 @@
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\bin\Debug\net7.0\CarPool.Database.deps.json
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\bin\Debug\net7.0\CarPool.Database.runtimeconfig.json
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\bin\Debug\net7.0\CarPool.Database.dll
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\bin\Debug\net7.0\CarPool.Database.pdb
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\bin\Debug\net7.0\CarPool.Models.dll
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\bin\Debug\net7.0\CarPool.Models.pdb
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\CarPool.Database.csproj.AssemblyReference.cache
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\CarPool.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\CarPool.Database.AssemblyInfoInputs.cache
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\CarPool.Database.AssemblyInfo.cs
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\CarPool.Database.csproj.CoreCompileInputs.cache
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\CarPool.Database.csproj.CopyComplete
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\CarPool.Database.dll
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\refint\CarPool.Database.dll
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\CarPool.Database.pdb
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\CarPool.Database.genruntimeconfig.cache
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\Database\obj\Debug\net7.0\ref\CarPool.Database.dll

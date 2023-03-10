@@ -1,0 +1,76 @@
+@import url("../book-ride/book-ride.component.css");
+
+.offer-ride-model {
+  background-color: white;
+  box-shadow: 0 0 4px darkgrey;
+  border-radius: 7px;
+  height: 27rem;
+  padding-top: 17px;
+  width: 21.5rem;
+  margin-top: 2rem;
+  font-size: 11px;
+}
+.form-switch .form-check-input {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+.model-1 {
+  margin-left: 3.5rem;
+}
+
+.office-ride-next {
+  border: none;
+  background-color: white;
+  color: #9319ff;
+  display: block;
+  margin-left: 12.8rem;
+  font-size: 16px;
+  position: relative;
+  top: -29px;
+}
+.stops {
+  height: 10rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 103%;
+}
+.offerModal2 {
+  position: relative;
+  top: -28.65rem;
+  right: -24.5rem;
+  padding-left: 20px;
+  height: 27rem;
+}
+.warning{
+  position: relative;
+    bottom: 23rem;
+    left: 25rem;
+    font-size: 16px;
+}
+.stop-increment {
+  color: #9319ff;
+  position: relative;
+  bottom: 32px;
+  float: right;
+  z-index: 1;
+}
+.edited {
+  background-color: #ffac19;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  margin-left: 20px;
+}

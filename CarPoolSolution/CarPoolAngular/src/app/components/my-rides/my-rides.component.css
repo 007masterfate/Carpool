@@ -1,0 +1,28 @@
+@import url("../book-ride/book-ride.component.css");
+
+.model-adjust {
+  margin-left: 124px;
+}
+.title-rides {
+  width: fit-content;
+  padding: 5px 37px;
+  border-radius: 4px;
+  background-color: #9319ff;
+  color: white;
+}
+.offered-rides {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 470px;
+}
+.title-offers {
+  width: fit-content;
+  padding: 5px 37px;
+  border-radius: 4px;
+  background-color: #ffac19;
+  color: white;
+}
+
+.booked-rides {
+  margin-left: 6.3rem;
+}

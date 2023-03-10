@@ -1,0 +1,63 @@
+<div class="col-4 right-signup">
+    <h4> Sign Up</h4>
+    <hr>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmitSignUp()" ngNativeValidate>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" placeholder="email" name="username"
+                formControlName="username" required email>
+            <label>Enter Email Id</label>
+
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="form-floating">
+                <input [type]="show ? 'text' : 'password'" class="form-control password-input"
+                    formControlName="password" placeholder="password" name="password" required><label>Enter
+                    Password</label>
+            </div>
+            <span class="input-group-text edit" (click)="displayPassword()"><i class="bi bi-eye-fill"></i></span>
+
+        </div>
+        <span class="d-inline-block info " tabindex="0" data-toggle="tooltip"
+            title="Minimum one Number &#013; Minimum one UpperCase &#013; Minimum one LowerCase &#013; Minimum one special character &#013; Minimum length-8">
+            <p style="pointer-events: none;" type="button" disabled><i class="bi bi-info-circle-fill"></i></p>
+        </span>
+
+
+
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" placeholder="password" formControlName="confirmPassword"
+                name="confirmPassword" required>
+            <label>Confirm Password</label>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary signup-redirect">Submit</button>
+    </form>
+    <div class="signup-redirect">Already a member?
+        <b routerLink="/login">LOG IN</b>
+        <hr class="login-hr">
+    </div>
+    <div class="help-block text-danger" *ngIf="!signUpForm.get('username')?.valid &&
+    signUpForm.get('username')?.touched
+              ">Enter Valid Email-ID</div>
+
+    <div class="text-danger position-relative"
+        *ngIf="(!signUpForm.get('password')?.valid && signUpForm.get('password')?.touched) || (!signUpForm.get('confirmPassword')?.valid && signUpForm.get('confirmPassword')?.touched)">
+        Minimum one Number,
+        Minimum one UpperCase,
+        Minimum one,
+        LowerCase, Minimum one
+        special character , Minimum length-8</div>
+
+    <div class="position-relative"
+        *ngIf="!(signUpForm.get('password')?.value == signUpForm.get('confirmPassword')?.value) && (signUpForm.get('password')?.touched && signUpForm.get('confirmPassword')?.touched) ">
+        Password and Confirm Password dont match
+
+    </div>
+
+
+    <img src="../../assets/Images/carpool/signupbgedited.png" alt="">
+
+</div>

@@ -1,0 +1,31 @@
+.home-bg {
+  width: 89% !important;
+  margin-left: 40px;
+  margin-top: -25px;
+}
+
+.home {
+  position: relative;
+  top: 3rem;
+  left: 25rem;
+  font-size: 25px;
+}
+
+.home div {
+  display: inline-block;
+  padding: 53px 53px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 0 5px darkgrey;
+}
+
+.home div:nth-child(2) {
+  background-color: #9319ff;
+  margin-right: 20px;
+}
+
+.home div:nth-child(3) {
+  background-color: #ffac19;
+}

@@ -1,0 +1,77 @@
+<div class="flip-card">
+    <div class="flip-card-inner" [ngClass]="{'flip' : isBookRideComp && isFlip && !isBookedRide}"
+        (click)="toggleFlip()">
+        <div class="flip-card-front match-model">
+            <div type="button" (click)="[onModelClick(data.offerId)]" data-bs-toggle="modal"
+                [attr.data-bs-target]="'#ride'+data.id">
+                <h4 *ngIf="!isBookRideComp">{{name}}</h4>
+                <h4 class="ms-4" *ngIf="isBookedRide">{{name}}</h4>
+                <h4 class="ms-4" *ngIf="isOfferedRide">{{currentUser.name}}</h4>
+                <!-- <img src="../../assets/Images/carpool/MyPic.jpg" alt="{{data.name}}'s Image"> -->
+
+                <div class="mt-3 row">
+                    <span class="col-2">
+                        <p>From</p>
+                        <p>{{data.from}}</p>
+                    </span>
+                    <app-start-endstyle class="col" [data]=4 [flag]=false></app-start-endstyle>
+                    <span class="col-4 adjust">
+                        <p>To</p>
+                        <p>{{data.to}}</p>
+                    </span>
+                </div>
+
+                <div class="row">
+                    <span class="col">
+                        <p>Date</p>
+                        <p>{{data.date}}</p>
+                    </span>
+                    <span class=" col">
+                        <p>Time</p>
+                        <p>{{data.time}}</p>
+                    </span>
+                </div>
+
+                <div class="row">
+                    <span class="col">
+                        <p>Price</p>
+                        <p><i class="bi bi-currency-rupee"></i> {{data.price}}/ person</p>
+                    </span>
+                    <span class="col" *ngIf="data.seatsAvailable!=null">
+                        <p>Seats</p>
+                        <p>{{data.seatsAvailable + bookedUsers.length}}</p>
+                    </span>
+                    <span class="col" *ngIf="data.seatsrequired!=null">
+                        <p>Seats</p>
+                        <p>{{data.seatsrequired}}</p>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card-back">
+            <h3>
+                Users Booked
+            </h3>
+
+            <table>
+                <tr>
+                    <th>User Name</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Seats Booked</th>
+                    <th>Price</th>
+                </tr>
+                <tr *ngFor="let users of bookedUsers,let i=index">
+
+                    <th>{{userList[i].name}}</th>
+                    <th>{{users.from}}</th>
+                    <th>{{users.to}}</th>
+                    <th>{{users.seatsBooked}}</th>
+                    <th>{{users.price}}</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>

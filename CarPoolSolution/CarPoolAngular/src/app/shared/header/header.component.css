@@ -1,0 +1,29 @@
+.app-logo {
+  width: 60px;
+}
+
+.profile-img {
+  width: 41px;
+  height: 41px;
+  border-radius: 100%;
+}
+header {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.drop-down {
+  position: absolute;
+  left: 66.2rem;
+  top: 5rem;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 0 3px grey;
+  width: 150px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 0;
+}
+.drop-down div:hover {
+  background-color: #7653fc;
+  color: white;
+}

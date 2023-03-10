@@ -1,0 +1,131 @@
+<section>
+    <app-header></app-header>
+    <div class="row bg-template offer-ride-body">
+        <div class="col-2 offer-ride-model model-1">
+            <h3 class="ms-3 mt-3">Offer a Ride</h3>
+            <span class="ms-3">we get you the matches asap ! <div class="form-check form-switch ">
+                    <input class="form-check-input edited" routerLink="/bookride" type="checkbox" role="switch">
+                </div></span>
+
+            <form class="ms-3 mt-2" [formGroup]="formData" (ngSubmit)="onSubmitForm()" ngNativeValidate>
+                <div class="row">
+                    <div class="col-10">
+                        <label>From</label>
+                        <select name="from" formControlName="from" required>
+                            <option *ngFor="let stop of stops|enumToArray:0:10,let i=index" value="{{i+1}}">{{stop}}
+                            </option>
+                        </select>
+                        <label>To</label>
+                        <select name="from" formControlName="to" required>
+                            <option *ngFor="let stop of stops|enumToArray:formData.get('from')?.value:10,let i=index"
+                                value="{{stop}}">{{stop}}
+                            </option>
+                        </select>
+                    </div>
+
+                    <app-start-endstyle class="col-2 mt-3" [data]=4 [flag]=true></app-start-endstyle>
+                </div>
+                <label for="date" min="2023-01-01">Date</label>
+                <input id="date-inp" class="input-edit" type="date" name="date" placeholder="xx-mm-yyyy"
+                    formControlName="date" required>
+
+                <label for="time">Time</label>
+                <div class="mt-4">
+                    <div class="d-inline-block" *ngFor="let selectedTime of timing|keyvalue">
+                        <input type="radio" class="btn-check" name="time" value="{{selectedTime.value}}"
+                            id="time{{selectedTime.value}}" formControlName="time" autocomplete="off" required>
+                        <label class="time-buttons btn me-2"
+                            for="time{{selectedTime.value}}">{{selectedTime.value}}</label><br>
+                    </div>
+                </div>
+
+
+
+                <button type="button" (click)="onClickNext(formData.get('from')?.value,formData.get('to')?.value)"
+                    class="office-ride-next mt-2 p-2"><b>Next
+                        >></b></button>
+
+                <div *ngIf="message!=''" class="col text-warning warning">
+                    {{message}}
+                    <br>
+                    <p *ngIf="!isSuccess">Might be also because of User Availablility</p>
+
+                </div>
+                <div class="ms-3 mt-3" [hidden]="isSecondForm" class="offerModal2 offer-ride-model">
+                    <h3 class="ms-3 mt-3">Offer a Ride</h3>
+                    <span class="ms-3">we get you the matches asap ! <div class="form-check form-switch ">
+                            <input class="form-check-input edited" routerLink="/bookride" type="checkbox" role="switch">
+                        </div></span>
+
+                    <div class="row stops">
+                        <div class="col">
+                            <div
+                                *ngIf="(stops|enumToArray:formData.get('from')?.value:formData.get('to')?.value).length==0">
+                                Not Stops are present inbetween the start and destination :(
+                            </div>
+                            <div class="ms-3" *ngFor="let index of stopsCount">
+                                <span
+                                    *ngIf="(stops|enumToArray:formData.get('from')?.value:formData.get('to')?.value).length>0"><label
+                                        for="stop{{index}}">Stop {{index}}</label>
+                                    <select name="stop{{index}}" formControlName="stop{{index}}" required>
+                                        <option value="none" selected> None </option>
+                                        <option
+                                            *ngFor="let stop of stops|enumToArray:formData.get('from')?.value:formData.get('to')?.value,let i=index"
+                                            value="{{stop}}">{{stop}}
+                                        </option>
+                                    </select>
+                                    <button type="button" *ngIf="index==stopsCount.length && stopsInputLimit!=index"
+                                        class="stop-increment btn" (click)="incrementStops()"><i
+                                            class="bi bi-plus"></i></button>
+                                    <button type="button" *ngIf="index>=1 && index!=stopsCount.length"
+                                        class="stop-increment btn" (click)="decrementStops()"><i
+                                            class="bi bi-dash"></i></button>
+                                </span>
+                            </div>
+                        </div>
+
+                        <app-start-endstyle
+                            *ngIf="(stops|enumToArray:formData.get('from')?.value:formData.get('to')?.value).length>0"
+                            class="col mt-3" [data]=8 [flag]=true></app-start-endstyle>
+                    </div>
+
+                    <div class="row">
+                        <div class=" ms-3 col-6">
+                            <label>Available Seats</label>
+                            <div>
+                                <div class="d-inline-block">
+                                    <input type="radio"
+                                        (click)="calculatePrice(formData.get('from')?.value,formData.get('to')?.value,1)"
+                                        class="btn-check" name="seat" value=1 id="seat1" formControlName="seat"
+                                        autocomplete="off" required>
+                                    <label class="seats btn me-2" for="seat1">1</label><br>
+                                </div>
+                                <div class="d-inline-block">
+                                    <input type="radio"
+                                        (click)="calculatePrice(formData.get('from')?.value,formData.get('to')?.value,2)"
+                                        class="btn-check" name="seat" value=2 id="seat2" formControlName="seat"
+                                        autocomplete="off" required>
+                                    <label class="seats btn me-2" for="seat2">2</label><br>
+                                </div>
+                                <div class="d-inline-block">
+                                    <input type="radio"
+                                        (click)="calculatePrice(formData.get('from')?.value,formData.get('to')?.value,3)"
+                                        class="btn-check" name="seat" value=3 id="seat3" formControlName="seat"
+                                        autocomplete="off" required>
+                                    <label class="seats btn me-2" for="seat3">3</label><br>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-3">
+                            <label>Price</label>
+                            <p class="fs-4"><i class="bi bi-currency-rupee"></i>{{calculatedPrice}}</p>
+                        </div>
+                    </div>
+
+                    <button class="ms-3" type="submit" class="model-submit"><b>Submit</b></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

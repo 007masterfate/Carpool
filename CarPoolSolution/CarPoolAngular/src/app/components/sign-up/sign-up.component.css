@@ -1,0 +1,82 @@
+.right-signup {
+  background-color: #ffac19;
+}
+input {
+  width: 15.5rem;
+}
+b {
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+button {
+  margin: 15px 0 0 -75px;
+  background-color: #9319ff;
+  width: 127px;
+  border-radius: 20px;
+}
+label {
+  color: grey;
+}
+form {
+  margin-left: 75px;
+}
+.right-signup {
+  color: white;
+  text-align: center;
+  padding-top: 90px;
+  width: 100%;
+  font-size: 13px;
+}
+h4 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+}
+hr {
+  height: 2px;
+  background: white;
+  color: white;
+  width: 58px;
+  opacity: 1;
+  margin: -1px 0 20px 175px;
+}
+.right-signup img {
+  margin-top: -26px;
+  width: 410px;
+  height: 195px;
+}
+
+.signup-redirect {
+  margin-bottom: 11px;
+  position: relative;
+  z-index: 1;
+  top: -9px;
+}
+
+.edit {
+  background-color: white;
+  border: none;
+  position: relative;
+  left: -90px;
+  font-size: 23px;
+  color: grey;
+}
+.form-floating > .form-control {
+  line-height: 1.25;
+  height: 53px;
+}
+
+.login-hr {
+  margin: 0 0 0 15rem;
+  width: 11%;
+}
+
+.password-input {
+  width: 13rem;
+}
+
+.info {
+  position: absolute;
+  bottom: 55.5%;
+  left: 94%;
+  font-size: 22px;
+}

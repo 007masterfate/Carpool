@@ -1,0 +1,396 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\CarPool\\CarPool.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\CarPool\\CarPool.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\CarPool\\CarPool.csproj",
+        "projectName": "CarPool",
+        "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\CarPool\\CarPool.csproj",
+        "packagesPath": "C:\\Users\\Shyam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\CarPool\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shyam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Database\\CarPool.Database.csproj": {
+                "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Database\\CarPool.Database.csproj"
+              },
+              "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Models\\CarPool.Models.csproj": {
+                "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Models\\CarPool.Models.csproj"
+              },
+              "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Service\\CarPool.Service.csproj": {
+                "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Service\\CarPool.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.AspNetCore.Mvc.WebApiCompatShim": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Database\\CarPool.Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Database\\CarPool.Database.csproj",
+        "projectName": "CarPool.Database",
+        "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Database\\CarPool.Database.csproj",
+        "packagesPath": "C:\\Users\\Shyam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shyam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Models\\CarPool.Models.csproj": {
+                "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Models\\CarPool.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Models\\CarPool.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Models\\CarPool.Models.csproj",
+        "projectName": "CarPool.Models",
+        "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Models\\CarPool.Models.csproj",
+        "packagesPath": "C:\\Users\\Shyam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shyam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Service\\CarPool.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Service\\CarPool.Service.csproj",
+        "projectName": "CarPool.Service",
+        "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Service\\CarPool.Service.csproj",
+        "packagesPath": "C:\\Users\\Shyam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shyam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Database\\CarPool.Database.csproj": {
+                "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Database\\CarPool.Database.csproj"
+              },
+              "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Models\\CarPool.Models.csproj": {
+                "projectPath": "C:\\Users\\Shyam\\Desktop\\Developement\\Internship\\tecnovert\\C sharp\\task5\\task-5-car-pooling-web-api-csharp-shyamtechnovert\\CarPoolSolution\\Models\\CarPool.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.21.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

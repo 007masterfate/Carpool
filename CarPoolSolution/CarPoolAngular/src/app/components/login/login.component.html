@@ -1,0 +1,38 @@
+<div class="col-4 right-login">
+
+    <h4>Log In</h4>
+    <hr>
+    <form [formGroup]="loginData" (ngSubmit)="onSubmit()" ngNativeValidate>
+
+        <div class="form-floating mb-3 ">
+            <input type="email" class="form-control" placeholder="email" name="username" formControlName="username"
+                required>
+            <label>Enter Email Id</label>
+        </div>
+
+
+        <div class="form-floating">
+            <input type="password" class="form-control" placeholder="password" name="password"
+                formControlName="password" required>
+            <label>Enter Password</label>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+    <div class="member mt-3">Not a member yet ?
+        <span class="signup" routerLink="/signup">SIGN UP</span>
+        <hr class="login-hr">
+    </div>
+    <div class="help-block text-warning" *ngIf="!loginData.get('username')?.valid &&
+                loginData.get('username')?.touched
+              ">Enter Valid Username</div>
+    <div class="help-block text-warning position-absolute"
+        *ngIf="!loginData.get('password')?.valid && loginData.get('password')?.touched">Minimum
+        one Number,
+        Minimum one UpperCase,
+        Minimum one,
+        LowerCase, Minimum one
+        special character , Minimum length-8</div>
+
+    <img src="../../assets/Images/carpool/signupbgedited.png" alt="">
+</div>

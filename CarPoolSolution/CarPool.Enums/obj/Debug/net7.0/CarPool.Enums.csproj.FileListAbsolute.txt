@@ -1,0 +1,12 @@
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\bin\Debug\net7.0\CarPool.Enums.deps.json
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\bin\Debug\net7.0\CarPool.Enums.dll
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\bin\Debug\net7.0\CarPool.Enums.pdb
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\obj\Debug\net7.0\CarPool.Enums.csproj.AssemblyReference.cache
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\obj\Debug\net7.0\CarPool.Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\obj\Debug\net7.0\CarPool.Enums.AssemblyInfoInputs.cache
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\obj\Debug\net7.0\CarPool.Enums.AssemblyInfo.cs
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\obj\Debug\net7.0\CarPool.Enums.csproj.CoreCompileInputs.cache
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\obj\Debug\net7.0\CarPool.Enums.dll
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\obj\Debug\net7.0\refint\CarPool.Enums.dll
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\obj\Debug\net7.0\CarPool.Enums.pdb
+C:\Users\Shyam\Desktop\Developement\Internship\tecnovert\C sharp\task5\task-5-car-pooling-web-api-csharp-shyamtechnovert\CarPoolSolution\CarPool.Enums\obj\Debug\net7.0\ref\CarPool.Enums.dll
